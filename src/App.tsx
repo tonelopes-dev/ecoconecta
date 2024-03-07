@@ -11,7 +11,7 @@ export function App() {
           >
             <img
               className="w-16 "
-              src="/src/assets/logo-ecoconecta.svg"
+              src="/assets/logo-ecoconecta.svg"
               alt="logo do ecoconecta"
             />
             <p className="text-4xl text-yellow-50">
@@ -27,7 +27,7 @@ export function App() {
         <section
           className="text-left py-10 flex justify-center relative "
           style={{
-            backgroundImage: "url('/src/assets/bg-ecoconecta.jpg')",
+            backgroundImage: "url('/assets/bg-ecoconecta.jpg')",
             backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
@@ -55,7 +55,7 @@ export function App() {
               ></iframe>
               {/* <img
                 className="lg:w-auto w-40"
-                src="/src/assets/Foto-banner.png"
+                src="/assets/Foto-banner.png"
                 alt="Descrição da Imagem"
               /> */}
             </div>
@@ -100,7 +100,7 @@ export function App() {
               {/* logo image planet */}
               <img
                 className="lg:w-auto w-40 md:mr-28"
-                src="/src/assets/Foto-banner.png"
+                src="/assets/foto-banner.png"
                 alt="Descrição da Imagem"
               />
             </div>
@@ -112,7 +112,7 @@ export function App() {
               <figure className="mb-4">
                 <img
                   className="w-full mx-auto"
-                  src="/src/assets/places/midwaymall.jpeg"
+                  src="/assets/places/midwaymall.jpeg"
                   alt="logo do Shopping Midway Mall"
                 />
                 <figcaption className="text-xs">Crédito: Foto: Folha da Cidade</figcaption>
@@ -140,7 +140,7 @@ export function App() {
               <figure className="mb-4">
                 <img
                   className="w-full mx-auto"
-                  src="/src/assets/places/camara-municipal-de-natal.jpg"
+                  src="/assets/places/camara-municipal-de-natal.jpg"
                   alt="logo da Câmara Municipal de Natal"
                 />
                 <figcaption className="text-xs">Crédito: Foto: Elpídio Júnior/Divulgação/CMN</figcaption>
@@ -164,7 +164,7 @@ export function App() {
               <figure className="mb-4">
                 <img
                   className="w-full mx-auto"
-                  src="/src/assets/places/procuradoria-geral-de-natal.jpeg"
+                  src="/assets/places/procuradoria-geral-de-natal.jpeg"
                   alt="logo da Procuradoria Geral do Município"
                 />
                 <figcaption className="text-xs">Crédito: Foto: secom</figcaption>
@@ -188,7 +188,7 @@ export function App() {
               <figure className="mb-4">
                 <img
                   className="w-full mx-auto"
-                  src="/src/assets/places/shopping-10-alecrim.jpg"
+                  src="/assets/places/shopping-10-alecrim.jpg"
                   alt="logo do Shopping 10 Alecrim"
                 />
                 <figcaption className="text-xs">Crédito: Foto: AVFilmes</figcaption>
@@ -211,7 +211,7 @@ export function App() {
               <figure className="mb-4">
                 <img
                   className="w-full mx-auto"
-                  src="/src/assets/places/semtas.jpeg"
+                  src="/assets/places/semtas.jpeg"
                   alt="logo da Secretaria Municipal de Trabalho e Assistência Social"
                 />
                 <figcaption className="text-xs">Crédito: Foto: Semtas</figcaption>
@@ -232,7 +232,7 @@ export function App() {
               <figure className="mb-4">
                 <img
                   className="w-full mx-auto"
-                  src="/src/assets/places/redemais-planalto.jpeg"
+                  src="/assets/places/redemais-planalto.jpeg"
                   alt="logo da Rede Mais Planalto"
                 />
                 <figcaption className="text-xs">Crédito: Foto: redemaisrn</figcaption>
@@ -256,7 +256,7 @@ export function App() {
               <figure className="mb-4">
                 <img
                   className="w-full mx-auto"
-                  src="/src/assets/places/partage-norte-shopping.jpg"
+                  src="/assets/places/partage-norte-shopping.jpg"
                   alt="logo do Partage Norte Shopping"
                 />
                 <figcaption className="text-xs">Crédito: Foto: rmcaeng</figcaption>
@@ -280,7 +280,7 @@ export function App() {
               <figure className="mb-4">
                 <img
                   className="w-full mx-auto"
-                  src="/src/assets/places/semurb.jpeg"
+                  src="/assets/places/semurb.jpeg"
                   alt="logo da Secretaria Municipal de Mobilidade Urbana"
                 />
                 <figcaption className="text-xs">Crédito: Foto: Alex Régis/Secom</figcaption>
@@ -303,7 +303,7 @@ export function App() {
               <figure className="mb-4">
                 <img
                   className="w-full mx-auto"
-                  src="/src/assets/places/ufrn.jpg"
+                  src="/assets/places/ufrn.jpg"
                   alt="logo da Secretaria Municipal de Mobilidade Urbana"
                 />
                 <figcaption className="text-xs">Crédito: Foto: Laurita Arruda</figcaption>
@@ -326,7 +326,7 @@ export function App() {
               <figure className="mb-4">
                 <img
                   className="w-full mx-auto"
-                  src="/src/assets/places/ifrn-campus-natal.jpg"
+                  src="/assets/places/ifrn-campus-natal.jpg"
                   alt="logo do Instituto Federal do Rio Grande do Norte - Campus Central"
                 />
                 <figcaption className="text-xs">Crédito: Foto: Portal IFRN</figcaption>
@@ -350,7 +350,7 @@ export function App() {
               <figure className="mb-4">
                 <img
                   className="w-full mx-auto"
-                  src="/src/assets/places/ccab-sul.JPG"
+                  src="/assets/places/ccab-sul.JPG"
                   alt="logo do Centro Cultural Adolpho Bloch - Sul"
                 />
                 <figcaption className="text-xs">Crédito: Foto: 2POS</figcaption>
@@ -371,7 +371,7 @@ export function App() {
               <figure className="mb-4">
                 <img
                   className="w-full mx-auto"
-                  src="/src/assets/places/praia-shopping-natal.jpg"
+                  src="/assets/places/praia-shopping-natal.jpg"
                   alt="logo do Praia Shopping Natal"
                 />
                 <figcaption className="text-xs">Crédito: Foto: NOVO Notícias</figcaption>
