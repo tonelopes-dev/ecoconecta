@@ -37,48 +37,87 @@ export function App() {
           <div className="absolute inset-0 bg-black bg-opacity-20 "></div>
 
           {/* Conteúdo da Seção, agora dentro de outra div para manter a sobreposição separada */}
-          <div className="flex flex-row justify-between max-w-[1280px]">
-            <div className="z-10 flex flex-col p-5 items-center justify-center w-[50%]">
-              <h2 className="text-6xl font-bold text-white text-left">Conectando você a pontos de coleta!</h2>
-              <p className="text-gray-100 mt-4 text-2xl text-left">
+          <div className="flex md:flex-row flex-col-reverse sm:justify-around lg:justify-between items-center max-w-[1280px]">
+            <div className="z-10 flex flex-col p-5 items-center justify-center md:w-[48%]">
+              <h2 className=" lg:text-5xl md:text-4xl text-3xl font-bold text-white text-left">Conectando você a pontos de coleta!</h2>
+              <p className="text-gray-100 mt-4 text-xl md:text-2xl text-left">
                 Ajude o planeta. Encontre locais para reciclagem e descarte consciente perto de você.
               </p>
             </div>
             <div className="z-10">
-              <img
-                className="w-auto"
-                src="./src/assets/foto-banner.png"
+              <iframe
+                className="md:w-[560px] md:h-[315px] sm:w-[280px] sm:h-[158px]"
+                src="https://www.youtube.com/embed/hO2d7EoqEq0?si=wkha079dXxVxvEYJ"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+              {/* <img
+                className="lg:w-auto w-40"
+                src="./src/assets/Foto-banner.png"
                 alt="Descrição da Imagem"
-              />
+              /> */}
             </div>
           </div>
         </section>
-
+        {/* coleta urbana especial */}
+        <section className="p-10 max-w-[1280px] flex flex-col justify-center mx-auto">
+          <h2 className="text-4xl text-left mb-3 font-bold">URBANA - Coleta Especial</h2>
+          <h4 className="text-2xl text-left mb-3 font-bold">Coleta Especial, Poda e Entulho</h4>
+          <p>
+            Coleta Especial - Coleta de podas e entulhos feita pela Urbana, mediante pagamento de R$ 80,00 (oitenta Reais) por carrada, solicitado
+            através do Alô Limpeza 3113-0555. Alô Limpeza - Serviço de Atendimento ao Público, para denúncias, reclamações e pedidos de coleta
+            especial. Telefone de contato: 3113-0555.
+          </p>
+          <a
+            href="https://www.natal.rn.gov.br/urbana/coleta-especial#:~:text=8%20%2D%20Como%20posso%20solicitar%20o,3113%2D0555%2C%20Op%C3%A7%C3%A3o%201."
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <p className="text-cyan-500 mt-4">Para mais informações acesse ➡️ Prefeitura do Natal/RN</p>
+          </a>
+        </section>
         {/* Features Section */}
         <section className="py-10 max-w-[1280px] flex flex-col justify-center mx-auto">
+          {/* Content information */}
           <div className="px-4 mb-4">
-            <h2 className="text-4xl text-left mb-3">Pontos de coleta de lixo eletroeletrônico</h2>
-            <h4 className="text-2xl text-left mb-3 font-bold">Sobre a Reciclagem</h4>
-            <p className="mb-4">
-              A reciclagem é fundamental para a preservação do meio ambiente. Ao descartar corretamente os materiais recicláveis, você ajuda a reduzir
-              a extração de recursos naturais, o consumo de energia e a poluição.
-            </p>
-            <p>
-              ✅ <span className="font-bold">Tipos de Materiais Aceitos:</span> Papel, plástico, metal e vidro.
-            </p>
-            <p>
-              ❌ <span className="font-bold">Regras e Restrições:</span> Não é aceito lixo orgânico ou material contaminado.
-            </p>
-          </div>
-          <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
-            {/* aa */}
-
-            <div className=" p-4 rounded-lg shadow flex flex-col justify-between ">
+            <div className="flex sm:flex-row px-4 flex-col-reverse sm:justify-around lg:justify-between items-center max-w-[1280px]">
+              {/* information */}
+              <div className="z-10 flex flex-col p-5 items-start justify-start  md:w-[48%]">
+                <h4 className="text-2xl text-left mb-3 font-bold">Sobre a Reciclagem</h4>
+                <p className="mb-4 ">
+                  A reciclagem é fundamental para a preservação do meio ambiente. Ao descartar corretamente os materiais recicláveis, você ajuda a
+                  reduzir a extração de recursos naturais, o consumo de energia e a poluição.
+                </p>
+                <p>
+                  ✅ <span className="font-bold">Tipos de Materiais Aceitos:</span> Papel, plástico, metal e vidro.
+                </p>
+                <p>
+                  ❌ <span className="font-bold">Regras e Restrições:</span> Não é aceito lixo orgânico ou material contaminado.
+                </p>
+              </div>
+              {/* logo image planet */}
               <img
-                className="w-full mx-auto mb-2"
-                src="./src/assets/places/midwaymall.jpeg"
-                alt="logo do Shopping Midway Mall"
+                className="lg:w-auto w-40 md:mr-28"
+                src="./src/assets/Foto-banner.png"
+                alt="Descrição da Imagem"
               />
+            </div>
+            <h2 className="text-4xl text-left mb-3">Pontos de Coleta de Lixo </h2>
+          </div>
+
+          <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className=" p-4 rounded-lg shadow flex flex-col justify-between ">
+              <figure className="mb-4">
+                <img
+                  className="w-full mx-auto"
+                  src="./src/assets/places/midwaymall.jpeg"
+                  alt="logo do Shopping Midway Mall"
+                />
+                <figcaption className="text-xs">Crédito: Foto: Folha da Cidade</figcaption>
+              </figure>
+
               <h3 className="font-bold text-lg text-left">Shopping Midway Mall</h3>
               <h4>Detalhes do Ponto de Coleta</h4>
 
@@ -98,11 +137,15 @@ export function App() {
             </div>
 
             <div className=" p-4 rounded-lg shadow flex flex-col justify-between">
-              <img
-                className="w-full mx-auto mb-2"
-                src="./src/assets/places/camara-municipal-de-natal.jpg"
-                alt="logo da Câmara Municipal de Natal"
-              />
+              <figure className="mb-4">
+                <img
+                  className="w-full mx-auto"
+                  src="./src/assets/places/camara-municipal-de-natal.jpg"
+                  alt="logo da Câmara Municipal de Natal"
+                />
+                <figcaption className="text-xs">Crédito: Foto: Elpídio Júnior/Divulgação/CMN</figcaption>
+              </figure>
+
               <h3 className="font-bold text-lg text-left">Câmara Municipal de Natal</h3>
               <p className="text-left">
                 Localizada na Av. Câmara Cascudo, 75 - Ribeira, Natal/RN. O ponto de coleta fica na entrada principal da Câmara.
@@ -118,11 +161,15 @@ export function App() {
             </div>
 
             <div className=" p-4 rounded-lg shadow flex flex-col justify-between">
-              <img
-                className="w-full mx-auto mb-2"
-                src="./src/assets/places/procuradoria-geral-de-natal.jpeg"
-                alt="logo da Procuradoria Geral do Município"
-              />
+              <figure className="mb-4">
+                <img
+                  className="w-full mx-auto"
+                  src="./src/assets/places/procuradoria-geral-de-natal.jpeg"
+                  alt="logo da Procuradoria Geral do Município"
+                />
+                <figcaption className="text-xs">Crédito: Foto: secom</figcaption>
+              </figure>
+
               <h3 className="font-bold text-lg text-left">PGM (Procuradoria Geral do Município)</h3>
               <p className="text-left">
                 Localizada na Rua Dr. João Medeiros Filho, 511 - Tirol, Natal/RN. O ponto de coleta fica na recepção da PGM.
@@ -138,11 +185,14 @@ export function App() {
             </div>
 
             <div className=" p-4 rounded-lg shadow flex flex-col justify-between">
-              <img
-                className="w-full mx-auto mb-2"
-                src="./src/assets/places/shopping-10-alecrim.jpg"
-                alt="logo do Shopping 10 Alecrim"
-              />
+              <figure className="mb-4">
+                <img
+                  className="w-full mx-auto"
+                  src="./src/assets/places/shopping-10-alecrim.jpg"
+                  alt="logo do Shopping 10 Alecrim"
+                />
+                <figcaption className="text-xs">Crédito: Foto: AVFilmes</figcaption>
+              </figure>
               <h3 className="font-bold text-lg text-left">Shopping 10 Alecrim</h3>
               <p className="text-left">
                 Localizado na Av. Eng. Roberto Freire, 880 - Tirol, Natal/RN. O ponto de coleta fica no piso G2, próximo à loja Renner.
@@ -158,11 +208,14 @@ export function App() {
             </div>
 
             <div className=" p-4 rounded-lg shadow flex flex-col justify-between">
-              <img
-                className="w-full mx-auto mb-2"
-                src="./src/assets/places/semtas.jpeg"
-                alt="logo da Secretaria Municipal de Trabalho e Assistência Social"
-              />
+              <figure className="mb-4">
+                <img
+                  className="w-full mx-auto"
+                  src="./src/assets/places/semtas.jpeg"
+                  alt="logo da Secretaria Municipal de Trabalho e Assistência Social"
+                />
+                <figcaption className="text-xs">Crédito: Foto: Semtas</figcaption>
+              </figure>
               <h3 className="font-bold text-lg text-left">Semtas</h3>
               <p className="text-left">Localizada na Rua São José, 245 - Cidade Alta, Natal/RN. O ponto de coleta fica na recepção da Semtas.</p>
               <a
@@ -176,11 +229,14 @@ export function App() {
             </div>
 
             <div className=" p-4 rounded-lg shadow flex flex-col justify-between">
-              <img
-                className="w-full mx-auto mb-2"
-                src="./src/assets/places/redemais-planalto.jpeg"
-                alt="logo da Rede Mais Planalto"
-              />
+              <figure className="mb-4">
+                <img
+                  className="w-full mx-auto"
+                  src="./src/assets/places/redemais-planalto.jpeg"
+                  alt="logo da Rede Mais Planalto"
+                />
+                <figcaption className="text-xs">Crédito: Foto: redemaisrn</figcaption>
+              </figure>
               <h3 className="font-bold text-lg text-left">Rede Mais Planalto</h3>
               <p className="text-left">
                 Presente em diversos supermercados da rede em Natal/RN. Consulte o site da Rede Mais Planalto para o endereço da loja mais próxima com
@@ -197,11 +253,14 @@ export function App() {
             </div>
 
             <div className=" p-4 rounded-lg shadow flex flex-col justify-between">
-              <img
-                className="w-full mx-auto mb-2"
-                src="./src/assets/places/partage-norte-shopping.jpg"
-                alt="logo do Partage Norte Shopping"
-              />
+              <figure className="mb-4">
+                <img
+                  className="w-full mx-auto"
+                  src="./src/assets/places/partage-norte-shopping.jpg"
+                  alt="logo do Partage Norte Shopping"
+                />
+                <figcaption className="text-xs">Crédito: Foto: rmcaeng</figcaption>
+              </figure>
               <h3 className="font-bold text-lg text-left">Partage Norte Shopping</h3>
               <p className="text-left">
                 Localizado na Av. Dr. João Medeiros Filho, 2555 - Potengi, Natal/RN. O ponto de coleta fica no piso L2, próximo à praça de
@@ -218,11 +277,14 @@ export function App() {
             </div>
 
             <div className=" p-4 rounded-lg shadow flex flex-col justify-between">
-              <img
-                className="w-full mx-auto mb-2"
-                src="./src/assets/places/semurb.jpeg"
-                alt="logo da Secretaria Municipal de Mobilidade Urbana"
-              />
+              <figure className="mb-4">
+                <img
+                  className="w-full mx-auto"
+                  src="./src/assets/places/semurb.jpeg"
+                  alt="logo da Secretaria Municipal de Mobilidade Urbana"
+                />
+                <figcaption className="text-xs">Crédito: Foto: Alex Régis/Secom</figcaption>
+              </figure>
               <h3 className="font-bold text-lg text-left">Semurb</h3>
               <p className="text-left">
                 Localizada na Av. Duque de Caxias, 140 - Petrópolis, Natal/RN. O ponto de coleta fica na recepção da Semurb.
@@ -238,11 +300,14 @@ export function App() {
             </div>
 
             <div className=" p-4 rounded-lg shadow flex flex-col justify-between">
-              <img
-                className="w-full mx-auto mb-2"
-                src="./src/assets/places/uni-rn.jpeg"
-                alt="logo da Universidade Federal do Rio Grande do Norte"
-              />
+              <figure className="mb-4">
+                <img
+                  className="w-full mx-auto"
+                  src="./src/assets/places/ufrn.jpg"
+                  alt="logo da Secretaria Municipal de Mobilidade Urbana"
+                />
+                <figcaption className="text-xs">Crédito: Foto: Laurita Arruda</figcaption>
+              </figure>
               <h3 className="font-bold text-lg text-left">UFRN</h3>
               <p className="text-left">
                 Localizado na Av. Senador Salgado Filho, 3000 - Campus Central, Natal/RN. O ponto de coleta fica na Biblioteca Central da UFRN.
@@ -258,11 +323,15 @@ export function App() {
             </div>
 
             <div className=" p-4 rounded-lg shadow flex flex-col justify-between">
-              <img
-                className="w-full mx-auto mb-2"
-                src="./src/assets/places/ifrn-campus-natal.jpg"
-                alt="logo do Instituto Federal do Rio Grande do Norte - Campus Central"
-              />
+              <figure className="mb-4">
+                <img
+                  className="w-full mx-auto"
+                  src="./src/assets/places/ifrn-campus-natal.jpg"
+                  alt="logo do Instituto Federal do Rio Grande do Norte - Campus Central"
+                />
+                <figcaption className="text-xs">Crédito: Foto: Portal IFRN</figcaption>
+              </figure>
+
               <h3 className="font-bold text-lg text-left">IFRN Campus Central</h3>
               <p className="text-left">
                 Localizado na Av. Hermes da Fonseca, 780 - Tirol, Natal/RN. O ponto de coleta fica na entrada principal do IFRN Campus Central.
@@ -278,11 +347,14 @@ export function App() {
             </div>
 
             <div className=" p-4 rounded-lg shadow flex flex-col justify-between">
-              <img
-                className="w-full mx-auto mb-2"
-                src="./src/assets/places/ccab-sul.JPG"
-                alt="logo do Centro Cultural Adolpho Bloch - Sul"
-              />
+              <figure className="mb-4">
+                <img
+                  className="w-full mx-auto"
+                  src="./src/assets/places/ccab-sul.JPG"
+                  alt="logo do Centro Cultural Adolpho Bloch - Sul"
+                />
+                <figcaption className="text-xs">Crédito: Foto: 2POS</figcaption>
+              </figure>
               <h3 className="font-bold text-lg text-left">CCAB Sul</h3>
               <p className="text-left">Localizado na Av. Bernardo Vieira, 3775 - Tirol, Natal/RN. O ponto de coleta fica na recepção do CCAB Sul.</p>
               <a
@@ -296,11 +368,15 @@ export function App() {
             </div>
 
             <div className=" p-4 rounded-lg shadow flex flex-col justify-between">
-              <img
-                className="w-full mx-auto mb-2"
-                src="./src/assets/places/praia-shopping-natal.jpg"
-                alt="logo do Praia Shopping Natal"
-              />
+              <figure className="mb-4">
+                <img
+                  className="w-full mx-auto"
+                  src="./src/assets/places/praia-shopping-natal.jpg"
+                  alt="logo do Praia Shopping Natal"
+                />
+                <figcaption className="text-xs">Crédito: Foto: NOVO Notícias</figcaption>
+              </figure>
+
               <h3 className="font-bold text-lg text-left">Praia Shopping Natal</h3>
               <p className="text-left">
                 Localizado na Via Costeira, 1661 - Ponta Negra, Natal/RN. O ponto de coleta fica no piso L3, próximo à praça de alimentação.
@@ -321,7 +397,14 @@ export function App() {
       {/* Footer */}
       <footer className="bg-green-600 text-white p-4 text-left sticky bottom-0">
         <div className="mx-auto max-w-[1280px] flex justify-between">
-          <p>EcoConecta © 2024</p>
+          <p>EcoConecta © 2024</p>{" "}
+          <a
+            href="https://www.linkedin.com/in/tonelopes-dev/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <p>Desenvolvido por Tone Lopes</p>
+          </a>
         </div>
       </footer>
     </div>
