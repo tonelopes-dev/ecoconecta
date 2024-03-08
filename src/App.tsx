@@ -84,7 +84,7 @@ export function App() {
           <div className="px-4 mb-4">
             <div className="flex sm:flex-row px-4 flex-col-reverse sm:justify-around lg:justify-between items-center max-w-[1280px]">
               {/* information */}
-              <div className="z-10 flex flex-col p-5 items-start justify-start  md:w-[48%]">
+              <div className="flex flex-col p-5 items-start justify-start  md:w-[48%]">
                 <h4 className="text-2xl text-left mb-3 font-bold">Sobre a Reciclagem</h4>
                 <p className="mb-4 ">
                   A reciclagem é fundamental para a preservação do meio ambiente. Ao descartar corretamente os materiais recicláveis, você ajuda a
