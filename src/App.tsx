@@ -46,7 +46,7 @@ export function App() {
             </div>
             <div className="z-10">
               <iframe
-                className="md:w-[560px] md:h-[315px] sm:w-[280px] sm:h-[158px]"
+                className="md:w-[560px] md:h-[315px] sm:w-[360px] sm:h-[200px]"
                 src="https://www.youtube.com/embed/hO2d7EoqEq0?si=wkha079dXxVxvEYJ"
                 title="YouTube video player"
                 frameBorder="0"
